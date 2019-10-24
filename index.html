@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de fazeres</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./media-queries.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <!-- Tema opcional -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+<!-- Última versão JavaScript compilada e minificada -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+</head>
+<body>
+<html>
+  <head>
+    <title>Lista</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+ 
+  </head>
+  <body>
+   
+    <div class="container">
+      <div class="col-sm-12">
+          <label for="new-task">Adicionar </label>
+          <div class="col-sm-6">
+            <label>Item</label><br/>
+              <input id="new-task" type="text">
+          </div>
+             <div class="col-sm-6">
+                <label for="new-resume">Resumo</label><br/><textarea class="col-sm-12" id="new-resume" type="text"></textarea>
+             </div>
+             <button class="addtoList">Adicionar</button>
+      </div>
+      <div class="col-sm-6">
+          
+            
+
+          <h3>Para fazer</h3>
+          <ul id="incomplete-tasks">
+            <!-- <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            <li class="editMode"><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+             -->
+          </ul>
+         
+    </div>
+    <div class="col-sm-6">
+       
+        <h3>Completo</h3>
+        <ul id="completed-tasks">
+          <!-- <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li> -->
+        </ul>
+    </div>    
+
+    
+    <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <!-- <h4 class="modal-title" id="myModalLabel"></h4> -->
+              <h3>Resumo</h3>
+            </div>
+            <div class="modal-body">
+              
+              <div id="resumoContent"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+
+  </div>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

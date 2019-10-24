@@ -1,0 +1,157 @@
+
+$colors: (
+  body: #c6c6c6,
+  letras: #0909E9,
+  button:#c9c9c9
+);
+
+body {
+  background:map-get($colors, body);
+  color: map-get($colors, letras);
+  font-family: Lato, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 90px;
+  height: 40px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  color: #333;
+}
+
+
+h3,label[for='new-task'],label[for='resume']  {
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid #333;
+  margin: 0;
+  text-transform: uppercase;
+}
+textarea {
+  height: 200px!important;
+}
+input[type="text"], textarea {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 40px;
+  width:100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  float: left;
+  left: 5px;
+  width: 318px;
+  position: relative;
+  z-index: 1;
+}
+button {
+  background: #0FC57C;
+  color: #FFF;
+}
+ button:hover {
+  color: #FFF;
+  background: map-get($colors , button );
+}
+.addtoList{
+  margin-top: 60px;
+  width:100%;
+  color: #FFF;
+  font-weight: 700;
+}
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li > input[type="text"] {
+  width: 235px;
+  overflow: hidden;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+
+}
+
+li > .delete {
+  background: #CF2323;
+  color: #FFF;
+}
+li > .edit {
+  color: #FFF!important;
+  background: yellowgreen;
+}
+li > .edit:hover {
+  color: #FFF!important;
+  background: blue;
+}
+li > .delete:hover {
+  color: #FFF!important;
+  background: blue;
+}
+
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
